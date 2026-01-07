@@ -1,5 +1,6 @@
 var input_var = document.querySelector("input")
 var ul_var = document.getElementById ("ul")
+
 function add()
 {
     var contents = input_var.value
