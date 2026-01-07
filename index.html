@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="to-do-list.css">
+        <script src="to-do-list.js" defer></script>
     </head>
     <body>
-        <h1 id="h1-tag"></h1>
-        <button onclick="update(event)">7</button>
-        <script src="demo.js"></script>
+        <div class="welcome">Welcome to My To-Do-List</div>
+
+        <div class="to-do-bg">
+
+            <div class="top-section">
+                <input class="input-box" placeholder="Enter your Task to Add">
+                <button onclick="add()" class="add-button">Add</button>
+            </div>
+
+            <ul id="ul">
+                <li>
+                    <p class="task">Hello what is your name my name is can yousaravanan</p>
+                    <button onclick="delete_function(event)" class="delete-button">Delete</button>
+                </li>
+            </ul>
+            
+        </div>
     </body>
 </html>
+
+
