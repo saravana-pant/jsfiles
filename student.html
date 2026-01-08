@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="student.css">
+        <script src="student.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Student Form</title>
+    </head>
+    <body>
+        <h1 style="font-family: Roboto;">Student Form</h1>
+        <div class="top-section">
+            <form autocomplete="off">
+            <table id="top-table">
+                <tr id="top-tr">
+                    <th id="top-th">Name</th>
+                    <td id="top-data">
+                        <input type="text" style="padding: 5px;outline: none; font-size: 15px;" id="name">
+                    </td>
+                </tr>
+                <tr id="top-tr">
+                    <th id="top-th">Age</th>
+                    <td id="top-data">
+                        <input type="number" style="padding: 5px;outline: none; font-size: 15px;" id="age">
+                    </td>
+                </tr>
+                <tr id="top-tr">
+                    <th id="top-th">Gender</th>
+                    <td id="top-data">
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr id="top-tr">
+                    <th id="top-th">Course</th>
+                    <td id="top-data">
+                        <select name="courses" id="courses" style="padding: 5px;outline: none; font-size: 14px;">
+                            <option value="Java Script">Java Script</option>
+                            <option value="Java">Java</option>
+                            <option value="Html & Css">Html</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr id="top-tr">
+                    <th id="top-th">Email</th>
+                    <td id="top-data">
+                        <input type="email" style="padding: 5px;outline: none; font-size: 15px;" id="email-input">
+                    </td>
+                </tr>
+            </table>
+            </form>
+            <button class="save-button" onclick="update()">Save</button>
+        </div>
+        <div>
+            <table id="bottom-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Saravanan</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>Java</td>
+                    <td>saravana@gmail.com</td>
+                    <td>
+                        <button class="delete-button" onclick="delete_function(event)">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>

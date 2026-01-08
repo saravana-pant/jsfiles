@@ -1,0 +1,51 @@
+.top-section{
+    border: 1px solid rgb(160, 155, 155);
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 275px;
+    padding: 10px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+#top-table,#top-th{
+    border: solid 1px rgb(160, 155, 155);
+    border-collapse: collapse;
+    padding: 5px;
+    margin-bottom: 0px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+#top-data{
+    border: solid 1px rgb(160, 155, 155);
+    border-collapse: collapse;
+    padding: 2px;
+}
+#courses{
+    width: 100%;
+}
+.save-button{
+    background-color: lightgreen;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    margin-top: 0px;
+}
+.delete-button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    font-family: Roboto;
+    font-size: 15px;
+    border-radius: 2px ;
+}
+table,td,th{
+    border: solid 1px rgb(160, 155, 155);
+    font-family: Roboto;
+}
+td{
+    padding: 2px;
+}
+th{
+    padding: 5px;
+}
