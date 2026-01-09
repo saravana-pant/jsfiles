@@ -1,0 +1,178 @@
+p{
+    margin: 0;
+    font-family: Roboto;
+}
+.entire-background{
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator-background{
+    background-color: white;
+    height: 390px;
+    width: 350px;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+
+.top-section{
+    height: 80px;
+    display: flex;
+}
+
+.result-div{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-radius: 3px;
+    border-color: red;
+    flex: 1;
+    padding-right: 10px;
+}
+.result{
+    font-size: 23px;
+    margin-left: 20px; 
+    font-family: Roboto;
+}
+
+
+
+
+.bottom-section{
+    height: 310px;
+    display: grid;
+    grid-template-columns: 290px 60px;
+}
+
+.bottom-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: red; 
+}
+
+.ac-button{
+    border: none;
+    background-color: rgb(224, 30, 30);
+    color: white;
+    padding: 5px 10px;
+    border-radius: px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: Roboto;   
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.ac-button:active{
+    opacity: .7;
+}
+
+.delete-button{
+    border: none;
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border-radius: px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.15s;   
+}
+.delete-button:active{
+    opacity: .7;
+}
+.delete-img{
+    width: 25px; 
+}
+
+
+.equal-button{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.equal:active{
+    opacity: .7;
+}
+
+
+.number-button{
+    border: none;
+    background-color: rgb(185, 182, 182);
+    padding: 5px 10px;
+    border-radius: px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.number-button:active{
+    opacity: .7;
+}
+
+.operator-buttons{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: green;
+    padding: 0px 2px;
+}
+.operator{
+    border: none;
+    background-color: rgb(185, 182, 182);
+    padding: 5px 10px;
+    border-radius: px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: Roboto;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.operator:active{
+    opacity: .7;
+}
