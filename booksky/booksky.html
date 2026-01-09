@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="booksky.css">
+    <script src="booksky.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-bar">
+        <h1>BookSky</h1>
+    </header>
+    <div class="overlay">
+        <div class="popup">
+            <h3>Add Book</h3>
+            <input type="text" placeholder="Book Title" class="book-title">
+            <input type="text" placeholder="Book Author" class="book-author">
+            <input type="text" placeholder="Short Description.." class="description">
+            <div>
+                <button id="add_button">ADD</button>
+                <button id="cancel-button">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="book-details">
+            <h2>Book Name</h2>
+            <h5>Author</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et illum quo cupiditate modi. Aspernatur magnam, asperiores saepe et veritatis consectetur. Corporis, facere consequuntur! Voluptates voluptate dicta delectus, cumque accusantium recusandae?</p>
+            <button id="delete-button">Delete</button>
+        </div>
+    </main>
+    <button class="add-button">+</button>
+</body>
+</html>

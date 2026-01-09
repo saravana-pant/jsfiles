@@ -6,8 +6,7 @@ var table_var = document.querySelector("#bottom-table")
 
 function update()
 {
-    let gender_value = document.querySelector("input[name='gender']:checked")?.value || "";
-
+    let gender_value = document.querySelector("input[name='gender']:checked")?.value || ""
 
     console.log(gender_value)
     if(name_var.value=="" || age_var.value=="" || course_var.value=="" || email_var.value=="" || gender_value=="")
@@ -48,6 +47,9 @@ function update()
         age_var.value=""
         course_var.value=""
         email_var.value=""
+        document.querySelectorAll("input[name='gender']").forEach(radio => {
+        radio.checked = false;
+    });
     }
 }
 
