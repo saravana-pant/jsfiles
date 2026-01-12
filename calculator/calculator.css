@@ -1,10 +1,16 @@
+*{
+    margin: 0;
+}
+button{
+    font-family: Roboto;
+}
 p{
     margin: 0;
-    font-family: Roboto;
+    font-family: Roboto,Arial;
 }
 .entire-background{
     position: fixed;
-    background-color: rgba(0,0,0,0.9);
+    background-color: black;
     left: 0;
     right: 0;
     top: 0;
@@ -14,11 +20,12 @@ p{
     justify-content: center;
 }
 .calculator-background{
-    background-color: white;
+    background-color:#313C4C;
     height: 390px;
     width: 350px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1px;
+    
 }
 
 
@@ -32,14 +39,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: end;
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-right-style: solid;
-    border-right-width: 2px;
-    border-radius: 3px;
-    border-color: red;
     flex: 1;
     padding-right: 10px;
 }
@@ -47,6 +46,7 @@ p{
     font-size: 23px;
     margin-left: 20px; 
     font-family: Roboto;
+    color: white;
 }
 
 
@@ -63,10 +63,6 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding-left: 25px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: red; 
 }
 
 .ac-button{
@@ -114,7 +110,7 @@ p{
 
 .equal-button{
     border: none;
-    background-color: orange;
+    background-color: #FFA312;
     color: white;
     padding: 5px 10px;
     border-radius: px;
@@ -124,18 +120,18 @@ p{
     border-radius: 25px;
     cursor: pointer;
     transition: opacity 0.15s;
+    
 }
-.equal:active{
+.equal-button:active{
     opacity: .7;
 }
 
 
 .number-button{
     border: none;
-    background-color: rgb(185, 182, 182);
-    padding: 5px 10px;
-    border-radius: px;
-    font-size: 20px;
+    background-color: #313133;
+    color: white;
+    font-size: 22px;
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -143,6 +139,7 @@ p{
     font-family: Roboto;
     cursor: pointer;
     transition: opacity 0.15s;
+    
 }
 .number-button:active{
     opacity: .7;
@@ -151,25 +148,18 @@ p{
 .operator-buttons{
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 10px;
     align-items: center;
-    border-style: solid;
-    border-width: 2px;
     border-radius: 3px;
-    border-color: green;
-    padding: 0px 2px;
+    padding: 0px 3px;
 }
 .operator{
     border: none;
-    background-color: rgb(185, 182, 182);
-    padding: 5px 10px;
-    border-radius: px;
+    background-color: white;
     font-size: 20px;
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
     border-radius: 25px;
-    font-weight: bold;
-    font-family: Roboto;
+    font-weight: 500;
     cursor: pointer;
     transition: opacity 0.15s;
 }

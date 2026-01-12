@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family:Roboto, sans-serif;
+        }
+        .background{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        main{
+            height: 400px;
+            width: 700px;
+            display: flex;
+            column-gap: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        }
+        main h1{
+            margin-bottom: 20px;
+        }
+        .registration{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 30px 5px 30px 30px;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        main input{
+            padding: 10px ;
+            display: block;
+            border: none;
+            outline: none;
+            background-color: rgb(230, 228, 228);
+            border-radius: 2px;
+            margin-bottom: 15px;
+            width: 80%;
+            font-size: 13px;
+        }
+        main input::placeholder{
+            color: rgb(102, 101, 101);
+        }
+        main .registration button{
+            width: 85%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5F4F8E;
+            color: white;
+        }
+        .welcome{
+            flex: 1;
+            background-color:#5F4F8D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-top-left-radius: 30%;
+            border-bottom-left-radius: 30%;
+            color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: border-radius 2s;
+        }
+        .welcome h1{
+            margin-bottom: 10px;
+            
+        }
+        .welcome p{
+            margin-bottom: 15px;
+        }
+        .welcome button{
+            background-color: #5F4F8D;
+            border:1px solid white;
+            padding: 10px;
+            width: 150px;
+            border-radius: 6px;
+            color: white;
+        }
+        .welcome-second{
+            flex: 1;
+            background-color:#5F4F8D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color: white;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <main>
+            
+            <div class="registration">
+                <h1>Registration</h1>
+                <input type="text" class="user-name" placeholder="Username">
+                <input type="email" class="email" placeholder="Email">
+                <input type="password" class="password" placeholder="Password">
+                <button class="reg-button">Register</button>
+            </div>
+            <div class="welcome">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="login">Login</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

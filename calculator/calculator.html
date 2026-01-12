@@ -13,7 +13,7 @@
         
         <div class="entire-background">
 
-            <div class="calculator-background">
+            <main class="calculator-background">
 
                 <div class="top-section">
 
@@ -26,11 +26,11 @@
                <div class="bottom-section">
 
                     <div class="bottom-buttons">
-                        <button class="ac-button" onclick="ac_function()">AC</button>
+                        <button class="ac-button">AC</button>
                         <button class="delete-button" onclick="delete_function()">
                             <img src="delete-removebg-preview.png" class="delete-img">
                         </button>
-                        <button class="equal-button" onclick="solve_function()">=</button>
+                        <button class="number-button" style="background-color:rgba(0, 0, 255, 0.637);">%</button>
                         <button class="number-button" onclick="update(event)">7</button>
                         <button class="number-button" onclick="update(event)">8</button>
                         <button class="number-button" onclick="update(event)">9</button>
@@ -50,10 +50,11 @@
                         <button class="operator" onclick="operator_function(event)">x</button>
                         <button class="operator" style="font-size: 27px;" onclick="operator_function(event)">-</button>
                         <button class="operator" onclick="operator_function(event)">+</button>
+                        <button class="equal-button">=</button>
                     </div>
 
                </div>
-            </div>
+            </main>
         </div>
     </body>
 </html>
