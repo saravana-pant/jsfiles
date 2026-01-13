@@ -54,7 +54,7 @@ create_button.addEventListener("click",function(){
     }
 })
 
-delete_button.addEventListener("click",function()
+delete_button.addEventListener("click",() =>
 {
     event.target.parentElement.remove()
 })
